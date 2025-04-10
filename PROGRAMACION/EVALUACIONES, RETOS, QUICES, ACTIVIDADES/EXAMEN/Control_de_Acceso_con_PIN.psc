@@ -1,6 +1,6 @@
 SubProceso NewPIN<-CambiarPIN 
 	Definir NewPIN Como Caracter;
-	Escribir "Digite su nuevo pin"
+	Escribir "Digite su nuevo pin";
 	Leer NewPIN;
 Fin SubProceso
 
@@ -45,7 +45,7 @@ Proceso Control_de_Acceso_con_PIN
 	
 	Repetir
 		prueba<-0;
-		Escribir "Ingrese su PIN"
+		Escribir "Ingrese su PIN";
 		Leer PINUsuario;
 		
 		long<-Longitud(PIN);
@@ -64,23 +64,23 @@ Proceso Control_de_Acceso_con_PIN
 					prueba<-prueba+0;
 				Fin Si
 			FinPara
-			Escribir ""
+			Escribir "";
 			Escribir prueba;
 		SiNo
-			Escribir "El numero de digitos de su PIN es incorrecto"
+			Escribir "El numero de digitos de su PIN es incorrecto";
 		Fin Si
-		respuesta<-ValidarPIN ( prueba )
+		respuesta<-ValidarPIN ( prueba );
 	Hasta Que respuesta==3
 	
 	Repetir
 		
-		MostrarMenuDeUsuario
+		MostrarMenuDeUsuario;
 		Leer opcion;
 		
 		Si opcion <> 0 Entonces
 			Segun opcion Hacer
 				opcion 1:
-					Escribir "Datos consultados"
+					Escribir "Datos consultados";
 				opcion 2:
 					PIN<-CambiarPIN;
 					Escribir "Su nuevo PIN es, ",PIN;
@@ -89,7 +89,7 @@ Proceso Control_de_Acceso_con_PIN
 			Fin Segun
 		Fin Si
 	Hasta Que opcion==0
-	Escribir "PROGRAMA A FINALIZADO CON EXITO"
+	Escribir "PROGRAMA A FINALIZADO CON EXITO";
 	
 	
 FinProceso
