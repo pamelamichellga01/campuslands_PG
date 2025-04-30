@@ -20,7 +20,27 @@ edades.remove(50)
 
 # print(f"Lista remove: {edades}")
 
-edades.pop()
+print(edades.index(25))
 
-# print(f"Lista pop: {edades}")
+edades.pop(6)
 
+print(f"Lista pop: {edades}")
+
+edades.sort()
+print(f"Lista creciente: {edades}")
+
+palabras=["palabra", "palabras", "mas palabras"]
+palabras.sort()
+print(f"Lista creciente: {palabras}")
+
+edades.reverse()
+print(f"Lista en reversa: {edades}")
+
+edades.sort(reverse=True)
+print(f"Lista creciente: {palabras}")
+
+# edades.clear()
+# print(f"Lista limpia: {edades}")
+
+edades_temporales=edades.copy()
+print(f"Lista temporal copiada: {edades_temporales}")
