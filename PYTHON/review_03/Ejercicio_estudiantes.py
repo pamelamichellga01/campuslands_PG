@@ -42,3 +42,5 @@ def registrar_estudiante():
     nombre = input("Ingrese el nombre del estudiante: ").title
     edad= int(input("Ingrese la edad del estudiante: "))
     curso_inscrito=input("Ingrese el curso del estudiante: ").title
+
+    tupla
