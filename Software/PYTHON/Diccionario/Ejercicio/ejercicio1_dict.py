@@ -66,7 +66,15 @@ while True:
     opcion=int(input("Seleccione una opcion: "))
 
     if opcion== 1:
-        print("hola")
+        while True:
+        
+            menu_admin()
+            opcion=int(input("seleccione una opcion: "))
+            if opcion == 1:
+                def crear_producto():
+                    
+
+
     elif opcion== 2:
         while True:
 
@@ -83,5 +91,6 @@ while True:
                     break
             elif opcion == 2:
                 print("Gracias por visitar licores Yustin")
+                break
             else:
                 print("Opcion no valida.")
