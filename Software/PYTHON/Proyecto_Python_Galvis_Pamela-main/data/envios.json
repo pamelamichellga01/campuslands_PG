@@ -1,0 +1,30 @@
+[
+    {
+        "numero_guia": "NTU1PY4UAQ",
+        "fecha_envio": "2025-05-13",
+        "hora_envio": "13:07:58",
+        "destinatario": {
+            "nombre": "luis",
+            "direccion": "Av 9 # 10 - 190 Barrio Doña Nidia",
+            "telefono": "3202503838",
+            "ciudad": "cucuta",
+            "barrio": "Doña nidia"
+        },
+        "remitente_id": "1193107305",
+        "estado": "Recibido"
+    },
+    {
+        "numero_guia": "S20TRSZB2D",
+        "fecha_envio": "2025-05-13",
+        "hora_envio": "13:34:42",
+        "destinatario": {
+            "nombre": "camilo",
+            "direccion": "calle 25 # 3 - 25",
+            "telefono": "3506708208",
+            "ciudad": "cucuta",
+            "barrio": "El desierto"
+        },
+        "remitente_id": "1193107305",
+        "estado": "Recibido"
+    }
+]
