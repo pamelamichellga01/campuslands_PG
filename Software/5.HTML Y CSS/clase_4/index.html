@@ -1,0 +1,136 @@
+<!--GET->Obtener  
+    POST->Enviar datos(lleno todos los campos y le doy enviar, la informacion viaja y se almacena)
+    PUT->Actualizar(Obtenemos los datos y si los cambio, estos deben viajar y guardarse actualizados)
+    PATCH->Actualizar(con PUT se actualizan todos los datos, con PATCH se actualizan ciertos campos, solo lo que yo modifique)
+    DELECTE->Eliminar-->
+
+    <!-- TIPOS DE FORMULARIO -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>EJEMPLO DE FORMULARIO</h1>
+        <form action="" method="">
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" required>
+            </div><br>
+
+            <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" required>
+            </div><br>
+
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="No olvidel el @" required>
+            </div><br>
+
+            <div>
+                <label for="password">Contraseña: </label>
+                <input type="password" name="" id="password">
+            </div><br>
+
+            <div>
+                <label for="phone">Telefono: </label>
+                <input type="tel" name="" id="phone">
+            </div><br>
+
+            <div>
+                <label for="edad">Edad: </label>
+                <input type="number" name="" id="edad" min="0">
+            </div><br>
+
+            <div>
+                <label for="web">Sitio Web: </label>
+                <input type="url" name="" id="web" required>
+            </div><br>
+
+            <div>
+                <label for="month">Mes: </label>
+                <input type="month" name="" id="month">
+            </div><br>
+
+            <div>
+                <label for="week">Semana: </label>
+                <input type="week" name="" id="week">
+            </div><br>
+            
+            <div>
+                <label for="">
+                    <input type="checkbox" value="true">
+                    Acepta terminos y condiciones.
+                    <input type="checkbox" value="true">
+                    Acepta terminos de datos persoanles.
+                </label>
+            </div><br>
+
+            sexo: <br>
+            <div>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="sexo" id="femenino" value="femenino">
+                <label for="femenino">Femenino</label>
+
+                <input type="radio" name="sexo" id="otro" value="otro">
+                <label for="otro">Otro</label><br><br><br>
+
+            </div><br>
+
+            <div>
+                <label for="rango">Nivel de satisfaccion: </label>
+                <input type="range" min="0" max="100"><br><br>
+            </div><br>
+            
+            <div>
+                <label for="color">Color favorito</label>
+                <input type="color" id="color"><br><br>
+            </div><br>
+
+            <div>
+                <label for="file">Subir Archivo</label>
+                <input type="file" id="file" ><br><br>
+            </div><br>
+
+            <div>
+                <label for="oculto">Campo oculto</label>
+                <input type="hidden" name="" id="oculto">
+            </div><br>
+
+            <div>
+                <label for="pais">País: </label>
+                <select name="pais" id="pais">
+                    <option disabled selected>Seleccione</option>
+                    <option value="mx">Mexico</option>
+                    <option value="co">Colombia</option>
+                    <option value="ec">Ecuador</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="ciudad">Ciudad (sugerencias):</label>
+                <input list="ciudades" id="ciudad">
+                <datalist id="ciudades">
+                    <option value="Pasto"></option>
+                    <option value="Cucuta"></option>
+                    <option value="Bucaramanga"></option>
+                    <option value="Medellin"></option>
+                </datalist>
+            </div><br>
+
+            <label for="comentarios">Comentarios: </label>
+            <textarea name="" id="comentarios" cols="40" rows="4"></textarea>
+            <br><br>
+            
+            <button type="submit">ENVIAR</button>
+            <button type="reset">RESET</button>
+
+        
+        </form>
+    </body>
+    </html>
